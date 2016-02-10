@@ -1,0 +1,51 @@
+<core:View
+	controllerName="sap.ui.demo.myFiori.view.LineItem"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core" >
+	<Page
+		title="Wine Pairing"
+		showNavButton="true"
+		navButtonPress="handleNavBack" >
+		<Table
+			growing="true"
+			growingScrollToLoad="true"
+			items="{Food2WineNavigation}" >
+				<columns>
+					<Column>
+						<header><Label text="Wine" /></header>
+					</Column>
+					<Column
+						minScreenWidth="Tablet"
+						demandPopin="true"
+						hAlign="Left" >
+						<header><Label text="Description" /></header>
+					</Column>
+					<Column
+						minScreenWidth="Tablet"
+						demandPopin="true"
+						hAlign="Center" >
+						<header><Label text="Taste" /></header>
+					</Column>
+					<Column
+						hAlign="Right" >
+						<header><Label text="Style" /></header>
+					</Column>
+				</columns>
+			<ColumnListItem
+			items="{Food2WineNavigation}"
+				type="Navigation" >
+				<cells>
+					<ObjectIdentifier
+						title="{Name}" />
+					<ObjectIdentifier
+						title="{Description}" />
+					<ObjectIdentifier
+						title="{Taste}" />
+					<ObjectIdentifier
+						title="{Style}" />
+				</cells>
+			</ColumnListItem>
+		</Table>
+	</Page>
+</core:View>
+

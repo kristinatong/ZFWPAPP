@@ -1,0 +1,71 @@
+{
+	"CategorySet" : [
+		{
+			"Name" : "Cheese/Nut",
+				"Category2FoodNavigation": [{
+				"Name" : "Feta",
+				"Food2WineNavigation" : [{
+					"Name" : "Sauvigon Blanc",
+					"Description" : "Sauvignon Blanc is a dry light-bodied white wine that originated in France. Wines are zesty, typically with herbal green fruit flavors. Sauvignon Blanc is an older heritage grape, a parent grape of Cabernet Sauvignon.",
+					"Taste" : "Gooseberry, Honeydew Melon, Passion Fruit, Grass",
+					"Style" : "Light-bodied White Wine"
+					}]
+				},{
+				"Name" : "Gorgonzola",
+				"Food2WineNavigation" : [{
+					"Name" : "Cabernet Sauvignon",
+					"Description" : "Cabernet Sauvignon is a full-bodied red wine that originated in France. Today, it’s the most popular wine variety in the world. Wines taste full-bodied with bold tanninsand a long persistent black peppery finish.",
+					"Taste" : "Black Cherry, Black Currant, Baking Spices, Cedar",
+					"Style" : "Full-bodied Red Wine"
+					}]
+				}]
+		},{
+			"Name" : "Herbs/Spice",
+				"Category2FoodNavigation" :	[{
+				"Name" : "Chives",
+					"Food2WineNavigation" : [{
+					"Name" : "Sauvigon Blanc"
+					}]
+				},{
+				"Name" : "Tarragon"}]
+		},{
+			"Name" : "Sauces",
+				"Category2FoodNavigation": [{
+				"Name" : "Citris"
+				}]
+		},{
+			"Name" : "Desserts",
+				"Category2FoodNavigation": [{
+				"Name" : "Sorbet"
+				}]
+		},{
+			"Name" : "Meat/Fowl",
+				"Category2FoodNavigation": [{
+				"Name" : "Chicken",
+				"Food2WineNavigation" : [{
+					"Name" : "Sauvigon Blanc",
+					"Description" : "Chardonnay is a dry full-bodied white wine that originated in France. When oak-aged, Chardonnay will taste creamy and buttery. Unoaked wines are lighter and zesty with apple and citrus flavors. Chardonnay is the white wine of Burgundy.",
+					"Taste" : "Starfruit, Yellow Apple, Butter, Chalk",
+					"Style" : "Full-bodied White Wine"
+					}]
+				}]
+		},{
+			"Name" : "Seafood",
+				"Category2FoodNavigation": [{
+				"Name" : "Salmon",
+				"Food2WineNavigation" : [{
+					"Name" : "Syrah",
+					"Description" : "Syrah (aka Shiraz) is a full-bodied red wine that originated in France. Wines are full-bodied with bold fruit flavors and subtle tannin that drops off into a smooth finish. Syrah is commonly blended with Grenache and Mourvèdre to create the red Rhône blend.",
+					"Taste" : "Blueberry, Plum, Pepper, Chocolate, Tobacco",
+					"Style" : "Full-bodied Red Wine"
+					}]
+				}]
+		},{
+			"Name" : "Vegetable/Fruit",
+				"Category2FoodNavigation": [{
+				"Name" : "Apple"
+				}]
+		}
+	]
+}
+

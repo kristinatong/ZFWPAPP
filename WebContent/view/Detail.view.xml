@@ -1,0 +1,49 @@
+<core:View
+	controllerName="sap.ui.demo.myFiori.view.Detail"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core" >
+	<Page
+		title="List of Food"
+		showNavButton="true"
+		navButtonPress="handleNavBack" >
+		<IconTabBar
+		id="idIconTabBar"
+		select="handleIconTabBarSelect"
+		class="sapUiResponsiveContentPadding">
+		<items>
+			<IconTabFilter
+				showAll="true"
+				count="{/ProductCollectionStats/Counts/Total}"
+				text="Products"
+				keys="All" />
+			<IconTabSeparator />
+			<IconTabFilter
+				icon="sap-icon://customfont/cheese"
+				iconColor="Positive"
+				count="{/ProductCollectionStats/Counts/Weight/Ok}"
+				text="Ok"
+				key="Ok" />
+			<IconTabFilter
+				icon="sap-icon://customfont/wine"
+				iconColor="Critical"
+				count="{/ProductCollectionStats/Counts/Weight/Heavy}"
+				text="Heavy"
+				key="Heavy" />
+			<IconTabFilter
+				icon="sap-icon://inventory"
+				iconColor="Negative"
+				count="{/ProductCollectionStats/Counts/Weight/Overweight}"
+				text="Overweight"
+				key="Overweight" />
+		</items>
+	</IconTabBar>
+		<List
+			items="{Category2FoodNavigation}" >
+			<StandardListItem
+				type="Navigation"
+				press="handleLineItemPress"
+				title="{Name}" />
+		</List>
+	</Page>
+</core:View>
+

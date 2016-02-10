@@ -1,0 +1,27 @@
+<core:View
+	controllerName="sap.ui.demo.myFiori.view.Master"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core" >
+	<Page
+		title="Food Categories" >
+		<subHeader>
+			<Bar>
+				<contentLeft>
+					<SearchField
+						search="handleSearch"
+						width="100%" >
+					</SearchField>
+				</contentLeft>
+			</Bar>
+		</subHeader>
+		<content>
+		<List
+			items="{/CategorySet}" >
+			<StandardListItem
+				type="Active"
+				press="handleListItemPress"
+				title="{Name}" />
+		</List>
+		</content>
+	</Page>
+</core:View>
